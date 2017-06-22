@@ -596,7 +596,7 @@ function configure_ceph_embedded_rgw {
     fi
 
     # Let keystone generate the certs, rgw needs these.
-    keystone-manage pki_setup --rebuild
+#    keystone-manage pki_setup --rebuild
 
     # Create radosgw service user with admin privileges
     create_service_user "radosgw" "admin"
